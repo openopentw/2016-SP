@@ -1,0 +1,23 @@
+line 95: args error
+		(void) fprintf( stderr, "USAGE:  %s port# logfile\n", argv[0] );
+
+line 108: initialize REQUESTP error
+		fprintf( stderr, "OUT OF MEMORY allocating all http requests\n" );
+
+line 116: initialize REQUESTP correct
+	fprintf( stderr, "\nSTARTING on %.80s, port %d, fd %d, maxconn %d, logfile %s...\n", 
+
+line 127: ACCEPT error
+			(void) fprintf( stderr, "OUT OF FILE DESCRIPTOR table ... (maxconn %d)\n", maxfd );
+
+line 137: ACCEPT successfully
+		fprintf( stderr, "GETTING a new request... fd %d from %s\n", conn_fd, requestP[conn_fd].host );	/*}}}*/
+
+line 145: READING http header or requested file error
+			fprintf( stderr, "ERROR on fd %d, code %d\n", 
+
+line 153: ready for WRITING
+			fprintf( stderr, "WRITING (buf %p, idx %d) %d bytes to request fd %d\n"
+
+line 159: complete for WRITING
+			fprintf( stderr, "COMPLETE writing %d bytes on fd %d\n", nwritten, requestP[conn_fd].conn_fd );
